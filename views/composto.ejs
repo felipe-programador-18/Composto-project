@@ -1,0 +1,27 @@
+<%- include('header') %>
+
+<form method="get" action="composto">
+     <div class="juros">
+      <input class="one" name="C" type="number" placeholder="Capital Inicial">
+      <input class="two" name="I" type="text" placeholder="Taxa de Juros">
+      <input class="four" name="t" type="text" placeholder="Período em">
+    <button class="botaofinal">clique aqui</button>
+     </div>
+</form>
+
+   <div class="resultado">
+      <% if(error){ %>
+         <%= error %>
+      <% } else{ %>
+        Juros de: <%= C %> , com capital de <%= i %> , com 
+        Tempo de <%= t %> .
+       A taxa de juros simples é : <%= teste %>  
+      <% } %>
+
+
+   </div>
+
+
+
+
+<%- include('footer') %>
